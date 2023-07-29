@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "fast-api-learn"
+version = "0.1.0"
+description = ""
+authors = ["r-eiyama <r-eiyama@macloud.jp>"]
+readme = "README.md"
+packages = []
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.100.1"
+uvicorn = "^0.23.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
