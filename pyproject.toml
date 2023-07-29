@@ -2,7 +2,7 @@
 name = "fast-api-learn"
 version = "0.1.0"
 description = ""
-authors = ["r-eiyama <r-eiyama@macloud.jp>"]
+authors = []
 readme = "README.md"
 packages = []
 
