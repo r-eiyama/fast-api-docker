@@ -1,0 +1,19 @@
+version: '3'
+
+tasks:
+  hello:
+    desc: This task says Hello, World!
+    cmds:
+      - echo "Hello, World!"
+  up:
+    desc: Dockerの起動
+    cmds:
+      - docker compose up -d
+  down:
+    desc: Dockerの終了
+    cmds:
+      - docker compose down
+  build:
+    desc: Docker build
+    cmds:
+      - docker compose build
