@@ -1,10 +1,6 @@
 version: '3'
 
 tasks:
-  hello:
-    desc: This task says Hello, World!
-    cmds:
-      - echo "Hello, World!"
   up:
     desc: Dockerの起動
     cmds:

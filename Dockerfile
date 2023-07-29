@@ -10,8 +10,9 @@ RUN apt-get update && apt-get install -y curl \
 # Poetryをダウンロードしてインストール
 RUN curl -sSL https://install.python-poetry.org | python -
 
-
+# Pathを通す
 ENV PATH /root/.local/bin:$PATH
+# 仮想環境をたてない
 RUN poetry config virtualenvs.create false
 
 # アプリケーションの依存関係をインストール
