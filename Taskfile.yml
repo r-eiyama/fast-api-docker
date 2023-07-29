@@ -13,3 +13,7 @@ tasks:
     desc: Docker build
     cmds:
       - docker compose build
+  ssh:
+    desc: ssh Container
+    cmds:
+      - docker compose exec api /bin/bash
