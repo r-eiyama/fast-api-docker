@@ -17,3 +17,11 @@ tasks:
     desc: ssh Container
     cmds:
       - docker compose exec api /bin/bash
+  downall:
+    desc: volumeごと削除
+    cmds:
+     - docker compose down --rmi all --volumes --remove-orphans
+  reload:
+    desc: FastAPIをreload
+    cmds:
+     - docker-compose exec api sh -c "cd /app/app && uvicorn main:app --reload"
